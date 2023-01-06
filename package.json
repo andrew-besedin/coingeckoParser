@@ -1,0 +1,30 @@
+{
+  "name": "coingeckoparser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "andrewprog97",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^2.1.0",
+    "node-fetch": "^2.6.5",
+    "puppeteer": "^19.4.1",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-stealth": "^2.11.1"
+  },
+  "build": {
+    "win": {
+      "target": [
+        "portable"
+      ]
+    },
+    "asar": "false"
+  },
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
+  }
+}

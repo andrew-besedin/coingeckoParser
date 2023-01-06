@@ -1,0 +1,9 @@
+[
+    {
+        "login": "test@test.com",
+        "password": "test",
+        "proxy": "111.111.11.11:1111",
+        "proxyLogin": "test",
+        "proxyPass": "test"
+    } 
+]

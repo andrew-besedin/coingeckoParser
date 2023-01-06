@@ -1,0 +1,12 @@
+#logger {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(78, 78, 237);
+    border-radius: 15px;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    overflow: auto;
+}
