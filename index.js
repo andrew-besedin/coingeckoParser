@@ -144,7 +144,9 @@ async function main(log) {
                 await page.waitForSelector('[data-target="#signInModal"]', { timeout: 100000 });
                 
                 await new Promise(res => setTimeout(res, 10000));
-                await page.click('[data-target="#signInModal"]');
+                await page.evaluate(() => {
+                    document.querySelector('[data-target="#signInModal"]').click();
+                });
                 await new Promise(res => setTimeout(res, 2000));
                 await signUp(page, account);
                 await page.waitForNavigation({waitUntil: 'domcontentloaded', timeout: 100000});   
